@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 500px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10%;
+    margin: 100px auto;
+}
+p{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+}
+input{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 25px;
+}
+hr{
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+#btn{
+    width: 70px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#p{
+    color: red;
+}
+.P{
+    color: green;
+}
