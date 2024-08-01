@@ -21,18 +21,18 @@ fetch('https://jsonplaceholder.typicode.com/posts').then((response)=>{
     return response.json()
 }).then((data) => {
     console.log(data);
-    let game_list = document.getElementsByClassName('game_lists');
-    let post = document.createElement('div')
-    for(post = data.title; post < 5; post++){
-    }
-    // post.innerText = data[0].title
-    // let post2 = document.createElement('div')
-    // post2.innerText = data[1].title
-    // let post3 = document.createElement('div')
-    // post3.innerText = data[2].title
-    // let post4 = document.createElement('div')
-    // post4.innerText = data[3].title
-    document.body.append(post)
+    // let game_list = document.getElementsByClassName('game_lists');
+    // let post = document.createElement('div')
+    // for(post = data.title; post < 5; post++){
+    // }
+    // // post.innerText = data[0].title
+    // // let post2 = document.createElement('div')
+    // // post2.innerText = data[1].title
+    // // let post3 = document.createElement('div')
+    // // post3.innerText = data[2].title
+    // // let post4 = document.createElement('div')
+    // // post4.innerText = data[3].title
+    // document.body.append(post)
     // document.body.append(post2)
     // document.body.append(post3)
     // document.body.append(post4)
