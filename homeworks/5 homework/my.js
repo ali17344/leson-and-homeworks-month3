@@ -7,6 +7,7 @@ weather_form.addEventListener('submit', (event) => {
        return response.json()
     }).then((data) =>{
         console.log(data);
+        let btn = document.getElementById('btn')
         let info = document.createElement('h1')
         let temp = document.getElementById('temp')
         let name = document.getElementById('Name')
@@ -17,8 +18,15 @@ weather_form.addEventListener('submit', (event) => {
         name.innerText = data.location.name
         wind_kph.innerText = data.current.wind_kph
         text.innerText = data.current.condition.text
-        if(temp.innerText =  data.current.temp_c){
+        temp.innerText =  data.current.temp_c
+        btn.addEventListener('click', (event) => {
+            event.preventDefault()
+            fetch('http://api.weatherapi.com/v1/current.json?key=7013c0154c9a44a892430916230407&q='+searchValue.value).then((response) => {
+               return response.json()
+            }).then((data) =>{
+             if(temp.innerText == data.current.temp_c){
             temp.innerText =  data.current.temp_f
-        }
-    })
-})
+           }else if(temp.innerText == data.current.temp_f){
+            temp.innerText = data.current.temp_c
+           }
+        })})})})
