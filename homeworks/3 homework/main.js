@@ -7,6 +7,7 @@ let finishResult = password.value.match(result)
 btn.addEventListener('click', () => {
     if(password.value.match(result)){
     open(form.action) 
+    // window.location.href = '/сайт ссылка'
     } else{
         incoret.textContent = 'Incoret password:123456789'
     }

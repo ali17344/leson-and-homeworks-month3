@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#333232 ;
+    height: 100vh;
+}
+.weather{
+    margin: 100px auto;
+    width: 840px;
+    height: 600px;
+}
+.h1{
+    font-size: 60px;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#search{
+    height: 40px;
+    width: 300px;
+    font-size: 30px;
+    border-radius: 5%;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;
+    font-size: 30px;
+    user-select: none;
+}
+h1{
+    color: aliceblue;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    user-select: none;
+}
+img{
+    width: 250px;
+    height: 250px;
+    margin-left:50%;
+    transform: translate(-50%);
+    user-select: none;
+}
