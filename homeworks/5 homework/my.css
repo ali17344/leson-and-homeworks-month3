@@ -32,6 +32,10 @@ button{
     font-size: 30px;
     user-select: none;
 }
+#btn{
+    width: 180px;
+    font-size: 28px;
+}
 h1{
     color: aliceblue;
     font-size: 60px;

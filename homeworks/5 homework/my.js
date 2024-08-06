@@ -17,12 +17,13 @@ weather_form.addEventListener('submit', (event) => {
         name.innerText = data.location.name
         wind_kph.innerText = data.current.wind_kph
         text.innerText = data.current.condition.text
+        temp.innerText = data.current.temp_c
         btn.addEventListener('click', (event) => {
             event.preventDefault()
             fetch('http://api.weatherapi.com/v1/current.json?key=7013c0154c9a44a892430916230407&q='+searchValue.value).then((response) => {
                return response.json()
             }).then((data) =>{
-             if(temp.innerText == data.current.temp_c){
+            if(temp.innerText == data.current.temp_c){
             temp.innerText =  data.current.temp_f
            }else if(temp.innerText == data.current.temp_f){
             temp.innerText = data.current.temp_c
