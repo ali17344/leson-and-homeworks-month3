@@ -18,15 +18,29 @@ weather_form.addEventListener('submit', (event) => {
         name.innerText = data.location.name
         wind_kph.innerText = data.current.wind_kph
         text.innerText = data.current.condition.text
+<<<<<<< HEAD
         temp.innerText =  data.current.temp_c
+=======
+        temp.innerText = data.current.temp_c
+>>>>>>> 99a1a237734f68a5c002a5b8dabf805b859b4c82
         btn.addEventListener('click', (event) => {
             event.preventDefault()
             fetch('http://api.weatherapi.com/v1/current.json?key=7013c0154c9a44a892430916230407&q='+searchValue.value).then((response) => {
                return response.json()
             }).then((data) =>{
+<<<<<<< HEAD
              if(temp.innerText == data.current.temp_c){
+=======
+            if(temp.innerText == data.current.temp_c){
+>>>>>>> 99a1a237734f68a5c002a5b8dabf805b859b4c82
             temp.innerText =  data.current.temp_f
            }else if(temp.innerText == data.current.temp_f){
             temp.innerText = data.current.temp_c
            }
+<<<<<<< HEAD
         })})})})
+=======
+        })})
+    })
+})
+>>>>>>> 99a1a237734f68a5c002a5b8dabf805b859b4c82
