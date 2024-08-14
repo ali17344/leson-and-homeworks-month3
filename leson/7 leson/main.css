@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.telegram .container{
+    max-width: 940px;
+    margin: 10px auto;
+    
+}
+.telegram form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+.telegram form input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.telegram form textarea{
+    max-width: 100%;
+    max-height: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-height: 200px
+}
+.telegram form button{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.telegram form h1{
+    color: white;
+    font-size: 30px;
+
+}

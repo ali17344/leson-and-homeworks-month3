@@ -1,0 +1,158 @@
+z*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1E1E1E;
+}
+/* header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    height: 94px;
+    padding: 0 30px;
+    position: relative;
+}
+
+.links{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    font-size: 24px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.wrap_btn{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+.wrap_btn button{
+    width: 155px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+.wrap_btn img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)
+    translateY(-50%);
+    width: 155px;
+    height: 45px;
+    z-index: 0;
+}
+
+.wrap_btn button span{
+    position: relative;
+    z-index: 1;
+}
+
+
+header .border{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    max-width: 1440px;
+}
+
+.search_button{
+    position: relative;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+.search_button img{
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left:50%;
+    width: 294px;
+    height: 80px;
+    z-index: 0;
+}
+
+.google_search{
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+}
+.search_button span{
+    position: relative;
+    z-index: 10;
+    color:black;
+}
+
+
+.google_search{
+    width: 900px;
+    margin: 400px auto;
+}
+
+.google_search input{
+    height: 90px;
+}
+section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 50px;
+    color: #FFD363;
+
+}
+.desc{
+    font-size: 30px;
+    color: white;
+} */
+.weather{
+    margin-top: 100px;
+}
+.weather form{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 5px;
+}
+
+.weather form input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+}
+
+.weather form button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+.weather h1{  
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
