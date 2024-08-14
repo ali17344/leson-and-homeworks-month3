@@ -33,12 +33,9 @@ button{
     user-select: none;
 }
 #btn{
-<<<<<<< HEAD
     width: 150px;
-=======
     width: 180px;
     font-size: 28px;
->>>>>>> 99a1a237734f68a5c002a5b8dabf805b859b4c82
 }
 h1{
     color: aliceblue;
