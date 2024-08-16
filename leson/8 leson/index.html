@@ -17,6 +17,47 @@
         <button id="nextPage" onclick="nextPage()">Вперёд</button>
     </div>
     <!-- <button id="btn">Нажми чтобы получить информацию</button> -->
-    <script src="./main.js"></script>
+    <script src="./main.js">
+        let page = 1 
+async function getCharacters (){ 
+    const container = document.querySelector('.container_characters')  
+    const res= await fetch('https://rickandmortyapi.com/api/character?page=' +page) 
+    const data =await res.json() 
+    console.log(data); 
+     
+    data.results.forEach((item)=>{ 
+        container.innerHTML+=` 
+        <div class="character_block"> 
+            <img src="${item.image}"> 
+            <div> 
+                <h2>${item.name}</h2> 
+                <h2 class="status">Status:${item.status}</h2> 
+                <h2 class="status">Species:${item.species}</h2> 
+                <h2 class="status">Gender:${item.gender}</h2> 
+            </div> 
+        </div> 
+        ` 
+    }); 
+} 
+getCharacters() 
+ 
+function nextPage(){ 
+    page+=1 
+    document.querySelector('.container_characters').innerHTML = '' 
+    document.getElementById('currentPage').innerText = page 
+    getCharacters() 
+} 
+nextPage() 
+ 
+function backPage(){ 
+    page -=1 
+    document.querySelector('.container_characters').innerHTML = '' 
+    document.getElementById('currentPage').innerText = page 
+    getCharacters() 
+} 
+backPage()
+
+
+    </script>
 </body>
 </html>
